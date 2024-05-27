@@ -9,6 +9,7 @@ import Counter from './components/functional/counter/counter';
 import UserForm from './components/functional/form/userForm';
 import LoginForm from './components/functional/form/loginForm';
 import MyForm from './components/functional/form/singleForm';
+import UseEffect1 from './components/functional/useEffect/useEffectEx1';
 
 class App extends Component {
   state = {
@@ -21,13 +22,7 @@ class App extends Component {
     });
   };
   render() {
-    return (
-      <div>
-        {/* <UserForm/> */}
-        {/* <LoginForm/> */}
-        <MyForm />
-      </div>
-    );
+    return <UseEffect1 />;
   }
 }
 
