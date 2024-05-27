@@ -1,12 +1,30 @@
-import Mounting from './components/class/lifecycle/mounting/mounting';
-import TodoComponent from './components/class/todo/todo';
+import { Component } from "react"
+import Mounting from "./components/class/lifecycle/mounting/mounting"
+import UpdatingPhase from "./components/class/lifecycle/updating/updating"
+import TodoComponent from "./components/class/todo/todo"
+import UnMounting from "./components/class/lifecycle/unMounting/unmounting"
 
-const App = () => {
-  return (
-    <div>
-      <Mounting color={'green'} />
-    </div>
-  );
-};
+class App extends Component {
+  state={
+    color:"red"
+  }
 
-export default App;
+   changeColor=()=>{
+    this.setState({
+      color:"blue"
+    })
+   }
+   render(){
+    return(
+      <div>
+<UnMounting/>
+  
+      </div>
+   
+    )
+
+   }
+ 
+}
+
+export default App

@@ -1,3 +1,12 @@
+7th May Task :
+
+1. Repeat the class
+2. Populate the buttons based on the size of response,
+3. Each button should be numbered , when we click on particular number ,populate the data in UI
+4. fetch and axios
+5. Class based component and functional based difference
+6. take a corousel , by default 3 , give add new button , by adding new dummy image has to add to the corousel
+
 6th may Tasks:
 
 1. Repeat the class
@@ -6,9 +15,7 @@
 4. Add interaction to the button (filters via button)
 5. All button for showing all the list
 
-6 may :
-
-1. Fetch vs Axios
+6. Fetch vs Axios
 
 Axios : Axios is a third party library which helps us to make http calls efficiently
 Advanatages of axios over fetch :
@@ -58,8 +65,13 @@ Dom
 3. render
 4. GetDerivedStateFromProps
 5. component did update : To cause or perform side effects in the updating phase
-6. shouldComponentUpdate
-7. getSnapShotBeforeUpdate
+6. shouldComponentUpdate : it is internally used in pure component
+   in general a component has to update when state or prop changes
+   if state or props doesn't change , we should not update the component
+7. getSnapShotBeforeUpdate: To get the state or props of the previous cycle
 
-8. UnMounting stage
+8. UnMounting stage :
+   whenever component removed from the dom , we call it as UnMounting stage
+   component by default can have some memory leaks or data leaks ,
+   we should prevent these data leaks , we can use Component will unmount
 9. Component will unmount
