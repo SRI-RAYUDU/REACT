@@ -1,13 +1,35 @@
-Container layer --> data layer --> State
+<!-- Tasks:
+1. Repeat the class
+2. Replace today class with array of objects (TODO  based on ID)
+3. Style the class topics , TODO
+4. Prepare for git hub , tasks , till date topics  -->
 
-State in class based components :
+Human life cycle :
+Earth
 
-State creation in class based components can be done in 2 ways
+1. Birth stage
+2. Survival stage
+3. Expiry stage
 
-Object way of creation
-Constructor way of creation
-To change the state in react class based components we must use setState method setState will accepts 2 args
+Component life cycle : Life cycle of components tells us how elements behaving from creation
+to removal from dom
+Dom
 
-Object or Call back function
-Call back function
-when we use setState method component will re-render and updates the layout state changes are asynchrnous
+1. Mounting stage
+
+   1. Constructor : To create and initialize the state in class component , we need constructor
+
+   2. Render : To insert the jsx inside the dom we actually need this method
+
+   3. Component did mount : it is a method where we can perform the side effects
+      side effects :
+   4. Http calls (Api calls) when page load
+   5. dom manipulations when page load
+   6. Timers trigger when page load
+   7. Event listeners when page load
+      Note : Component did mount will runs only once in a life cycle
+
+   8. GetDerivedStateFromProps
+
+2. Updating stage
+3. UnMounting stage
