@@ -1,30 +1,29 @@
-import { Component } from "react"
-import Mounting from "./components/class/lifecycle/mounting/mounting"
-import UpdatingPhase from "./components/class/lifecycle/updating/updating"
-import TodoComponent from "./components/class/todo/todo"
-import UnMounting from "./components/class/lifecycle/unMounting/unmounting"
+import { Component } from 'react';
+import Mounting from './components/class/lifecycle/mounting/mounting';
+import UpdatingPhase from './components/class/lifecycle/updating/updating';
+import TodoComponent from './components/class/todo/todo';
+import UnMounting from './components/class/lifecycle/unMounting/unmounting';
+import Counter from './components/class/counter/counter';
+import ProductListing from './components/class/products/products';
 
 class App extends Component {
-  state={
-    color:"red"
-  }
+  state = {
+    color: 'red',
+  };
 
-   changeColor=()=>{
+  changeColor = () => {
     this.setState({
-      color:"blue"
-    })
-   }
-   render(){
-    return(
+      color: 'blue',
+    });
+  };
+  render() {
+    return (
       <div>
-<UnMounting/>
-  
+        <Mounting />
+        <ProductListing />
       </div>
-   
-    )
-
-   }
- 
+    );
+  }
 }
 
-export default App
+export default App;
