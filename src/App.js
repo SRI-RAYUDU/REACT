@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import NavigationStack from './navigation/navigation-stack';
+import CircleGenerator from './components/functional/circle/circleGenerator';
 
 class App extends Component {
   state = {
