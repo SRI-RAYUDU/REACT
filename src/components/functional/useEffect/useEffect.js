@@ -4,12 +4,15 @@ import {
   checkArrayLengthExists,
   checkObjectEmpty,
 } from '../../../utills/functions';
+import ImageComponent from '../image/image'
+import { Link } from 'react-router-dom';
 
 const UseEffect1 = () => {
   const [todos, setTodos] = useState([]);
   const [count, setCount] = useState(1);
   const [age, setAge] = useState(10);
   const [eachTodo, setEachTodo] = useState({});
+  use 
 
   // useEffect will trigger once (fetch data from server)
   useEffect(() => {

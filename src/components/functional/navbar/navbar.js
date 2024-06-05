@@ -1,16 +1,22 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { themeInfo, userInfo } from '../../../navigation/navigation-stack';
 
 const NavBar = () => {
   const darkTheme = false;
+  const { name } = useContext(userInfo);
+  const { darkMode, count } = useContext(themeInfo);
+  // console.log('userInformation: ', userInformation);
 
   const linkStyle = {
     textDecoration: 'none',
-    color: 'black',
+    color: darkMode ? 'white' : 'black',
   };
+
   return (
     <nav
       class={
-        darkTheme
+        darkMode
           ? 'navbar navbar-expand-sm bg-dark navbar-dark'
           : 'navbar navbar-expand-sm bg-light navbar-light'
       }
@@ -19,7 +25,7 @@ const NavBar = () => {
         <ul className="navbar-nav">
           <li className="nav-item nav-link">
             <Link to={'/'} style={linkStyle}>
-              Home
+              {name}
             </Link>
           </li>
           <li className="nav-item nav-link">
@@ -34,7 +40,7 @@ const NavBar = () => {
           </li>
           <li className="nav-item nav-link">
             <Link to={'/blog'} style={linkStyle}>
-              Blog
+              Cart {count}
             </Link>
           </li>
         </ul>

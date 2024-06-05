@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/functional/navBar/navBar';
+import NavBar from '../components/functional/navbar/navbar';
 import UseEffect1 from '../components/functional/useEffect/useEffectEx1';
 
 function HomeScreen() {
